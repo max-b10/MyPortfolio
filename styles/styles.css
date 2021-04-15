@@ -1,0 +1,61 @@
+*{
+    display: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Arvo', serif;
+}
+
+body{
+    height:100vh;
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 180px;
+    /* justify-content: center; */
+    align-items: center;
+    height: 100vh;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+.name{
+    font-size: 30px;
+    font-weight: 700;
+    margin: 4px 0px;
+}
+.role{
+    font-size: 22px;
+    font-weight: 400;   
+}
+
+/* Contact section favicons */
+.favicons{
+    position: absolute;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(172, 59, 59);
+}
+.github{
+    border-radius: 50%;
+    margin:2px;
+    width: 32px;
+    height:32px;
+    background-color: white;
+}
+
+.linkedin{
+    margin:2px;
+    width: 29px;
+    height:30px;
+    background-color: white;
+}
+#linkedin-favicon{
+    /* background-color: black; */
+    border-radius: 50%;
+}
