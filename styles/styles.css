@@ -10,30 +10,42 @@ body{
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.65;
+    background-image: url('/images//Square-Checker-Website-Background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: top center; */
 }
 h2{
     font-size: 1.3rem;
+    margin: 2px 2px;
+    padding: 2px 2px;
+}
+h6{
+    font-weight: 400;
 }
 p{
     font-weight: 300;
     font-size: .7rem;
     font-style: italic;
+    margin: 0 auto;
+    padding: 2px 2px;
+    line-height: 1.5rem;
+    max-width: 80%;
 }
 .container{
-    background-image: url('/images/background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    margin: 0 auto;
     min-height: 100vh;
-    width: 100vw;
-    color: white;
+    max-width: 90%;
+    /* width: 100vw; */
+    color: rgb(232, 232, 232);
     vertical-align: baseline;
     padding: 2rem 0rem;
 }
+/* Name and Role block */
 .header{
     display: flex;
     flex-direction: column;
@@ -44,29 +56,31 @@ p{
     padding: 3rem 2rem 1rem 2rem;
 }
 .name{
-    font-size: 2.5rem;
-    margin: 4px 0px;
+    font-size: 2.2rem;
+    margin: 2px 0px;
     letter-spacing: 2px;
-    border-top: solid white 1px;
+    /* border-top: solid white 1px; */
 }
 .role{
     font-size: 22px;
     font-weight: 400;  
-    margin: 4px 0px 4px 0px;
+    margin: 2px 0px 8px 0px;
     border-bottom: solid white 1px;
 }
+/* Projects content block */
 .content{
     
     position: relative;
     margin: 0 auto;
-    background-color: white;
+    background-color: rgb(232, 232, 232);
     color: black;
     width: 100%;
     padding: 5px 5px;
     text-align: center;
 }
+/* 'My Projects' header */
 #heading{
-    color:#8a8a8a;
+    color:black;
     padding-top: 8px;
 }
 #heading::before, #heading::after {
@@ -88,12 +102,47 @@ p{
 
 }
 
-.top-project{
-    border-bottom: solid 2px #eeeeee;
+.projects-header{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    border-bottom: solid 1px black;
+    max-width: 80%;
 }
+
 .project{
-    padding: 1rem 2rem 0rem 2rem;
+    padding: 1rem 2rem .5rem 2rem;
     text-align: center;
+}
+.button-container{
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px black;
+    max-width: 100%;
+}
+/* Project images */
+/* .image-container{
+
+} */
+#flappy-bird, #snake, #breakout, #calculator, #hangman, #todo-list, #score-keeper{
+    padding: 1px;
+    display: inline-block;
+    margin: 0 auto;
+    border: solid 1px  #8a8a8a;;
+    max-width: 100%;
+    max-height: 30vh;
+}
+.button{
+    border: solid black 1px;
+    cursor: pointer;
+    font-size: 0.4rem;
+    font-weight: 900;
+    letter-spacing: 0.05rem;
+    height: 2rem;
+    line-height: 1rem;
+    padding: 0 1rem;
+    text-transform: uppercase;
 }
 /* Contact section favicons */
 /* .contact{
