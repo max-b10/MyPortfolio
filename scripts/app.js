@@ -1,3 +1,4 @@
+// Buttons Variables:
 const flappyBirdPlayButton = document.querySelector("#flappy-bird-play-button");
 const flappyBirdCodeButton = document.querySelector("#flappy-bird-code-button");
 const snakePlayButton = document.querySelector("#snake-play-button");
@@ -16,6 +17,8 @@ const scoreKeeperPlayButton = document.querySelector(
 const scoreKeeperCodeButton = document.querySelector(
   "#score-keeper-code-button"
 );
+// Image Variables:
+const githubImage = document.querySelector("#github-image");
 
 // Flappy Bird
 flappyBirdPlayButton.addEventListener("click", () => {
@@ -71,4 +74,8 @@ scoreKeeperPlayButton.addEventListener("click", () => {
 });
 scoreKeeperCodeButton.addEventListener("click", () => {
   window.open("https://github.com/max-b10/chess-series-score-keeper");
+});
+
+githubImage.addEventListener("click", () => {
+  window.open("https://github.com/max-b10");
 });
