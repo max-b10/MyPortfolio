@@ -35,7 +35,6 @@ h6{
 p{
     font-weight: 300;
     font-size: .8rem;
-    /* font-style: italic; */
     margin: 0.5rem auto;
     padding: 0 0 0.5rem 0;
     line-height: 1.5rem;
@@ -46,7 +45,6 @@ p{
     p{
     font-weight: 300;
     font-size: 1rem;
-    /* font-style: italic; */
     margin: 0 auto;
     padding: 2px 2px;
     line-height: 1.9rem;
@@ -54,12 +52,7 @@ p{
     text-align: justify;
 }
 }
-/* @media(min-width:769px){
-    .layout-test{
-        display: flex;
-        flex-direction: row;
-    }
-} */
+
 
 .container{
     display: flex;
@@ -68,28 +61,137 @@ p{
     justify-content: center;
     margin: 0 auto;
     min-height: 50vh;
-    /* max-width: 90%; */
     width: 90%;
     color: rgb(232, 232, 232);
     vertical-align: baseline;
     padding: 1rem 1rem;
 }
-/* Name and Role block */
+
+.hamburger-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    cursor:pointer;
+    right: 0;
+    top: 2%;
+    color: black;
+    background-color: rgb(232, 232, 232);
+    padding: .3rem;
+    width: 30px;
+    height: 30px;
+}
+/* .hamburger-container:active{
+
+} */
+@media(min-width:769px){
+    .hamburger-container{
+        display: none;
+    }
+}
+
+/* .line{
+    width: 15px;
+    height: 1.3px;
+    background-color:black;
+    margin: 3px;
+} */
+.hamburger-icon{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+#hamburger-image{
+    width: 25px;
+    padding: 0 .1rem;
+}
+
+/* .hamburger-text{
+    font-weight: bold;
+    font-size: .9rem;
+    margin-left: .2rem;
+} */
+
+/* Increase hamburger size on larger touch screens: */
+@media(min-width:426px){
+    .hamburger-container{
+    right: 3%;
+    top: 3%;
+    /* transform: translate(-5%,-50%); */
+}
+.line{
+    width: 17px;
+    height: 1.5px;
+    background-color:black;
+    margin: 4px;
+}
+.hamburger-text{
+    font-size: 1rem;
+}
+}
+
+/* Hamburger panel */
+.hamburger-panel{
+    display: none;
+    position:fixed;
+    right:0;
+    top:0;
+    z-index:1000;
+    height: 100%;
+    width: 70%;
+    background-color: rgb(232, 232, 232);
+    color:black;
+}
+.nav{
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+}
+li{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    list-style: none;
+    border-bottom: solid 1px #8a8a8a;
+    font-weight:bold;
+    padding: .4rem 0rem;
+    /* margin: 1rem 1rem; */
+}
+li span{
+    margin-left: 15px;
+}
+li img{
+    width: 10%;
+}
+#nav-cross{
+    z-index: 2000;
+    position: absolute;
+    cursor:pointer;
+    right: 6%;
+    top: 2%;
+    /* width:10px; */
+}
+.cross img{
+    width:7%;
+}
 .header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* margin: 0 0; */
     width: 100%;
     min-height: 40vh;
     text-align: center;
-    padding: 2rem 2rem;
+    padding: 4rem 2rem;
 }
 .name{
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin: 2px 0px;
     letter-spacing: 2px;
     /* border-top: solid white 1px; */
+}
+@media(max-width:374px){
+.name{
+font-size: 3rem;
+}
 }
 .role{
     font-size: 1.5rem;
@@ -102,9 +204,10 @@ p{
 .content{
     margin: 0 auto;
     background-color: rgb(232, 232, 232);
+    /* background-color: rgba(250, 235, 215, 0.664); */
     color: black;
     width: 90%;
-    padding: 1rem 1rem;
+    padding: 1rem 0rem;
     text-align: center;
 }
 
@@ -115,7 +218,7 @@ p{
         justify-content: center;
         max-width: 100%;
         padding: 1rem 1rem;
-        margin: 1rem 2rem;
+        margin: 1rem 0rem;
 	    border-bottom: solid 1px #8a8a8a;
     }
    
@@ -152,25 +255,22 @@ p{
     flex-direction: column;
     margin: auto;
     padding: 0 0 1rem 0;
+    /* border-top: solid 1px black; */
     border-bottom: solid 1px black;
-    max-width: 80%;
+    max-width:100%;
 }
 
-
 .project{
-    padding: 1rem 2rem .5rem 2rem;
+    padding: 1rem 0rem .5rem 0rem;
     text-align: center;
 }
 .project-header{
     font-size: 1rem;
-    padding: 0 0 1rem 0
-}
-.button-container{
-    margin: 0 auto;
     padding: 0 0 1rem 0;
-    border-bottom: solid 1px black;
-    max-width: 100%;
+    text-decoration: underline;
+
 }
+
 @media(min-width:426px){
     .project{
     width: 42%;
@@ -186,10 +286,8 @@ p{
 }
 
 
-/* Project images */
-/* .image-container{
+/* Project images*/
 
-} */
 #flappy-bird, #snake, #breakout, #calculator, #hangman, #todo-list, #score-keeper{
     padding: 1px;
     margin: 0 auto;
@@ -201,11 +299,19 @@ p{
     max-width: 31vw;
 }   
 }
+
+/* Buttons */
+.button-container{
+    margin: 0 auto;
+    padding: 0 0 1rem 0;
+    border-bottom: solid 1px #8a8a8a;
+    max-width: 100%;
+}
 .button{
     border: solid rgb(51, 51, 51) 1px;
     color: black;
     cursor: pointer;
-    font-size: 0.5rem;
+    font-size: 0.6rem;
     font-weight: 900;
     letter-spacing: 0.05rem;
     height: 2rem;
@@ -224,34 +330,46 @@ p{
     font-weight: bold;
     outline: none;
 }
+
 /* Contact section icons */
 .contact{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    margin: 0 auto;
+    width: 80%;
+}
+/* Hide Contact icons on touch screens: */
+@media(max-width:768px){
+.contact{
+    display: none;
+}
+
 }
 .icons{
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    /* border:1px solid black; */
-    width: 50%;
 }
-.icon{
-    max-width: 50%;
-}
-#github-image, #linkedin-image, #email-image{
-    max-width: 50%;
+
+
+#github-image {
+    max-width: 40%;
     object-fit: cover;
     border-radius: 50%;
 }
-#github-image:hover, #linkedin-image:hover, #email-image:hover{
+#cv-image, #email-image, #mobile-image, #linkedin-image{
+    max-width: 40%;
+    object-fit: cover;
+}
+#github-image:hover, #linkedin-image:hover, #cv-image:hover{
     cursor: pointer;
     background-color:#cacaca;
 }
-.contact-2{
+/* .contact-2{
     display: flex;
     justify-content: flex-start;
     background-color: rgb(232, 232, 232);
     width:40%;
-    /* border-radius: ; */
-}
+    border-radius: 50%;
+} */
