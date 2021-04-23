@@ -17,13 +17,28 @@
   </head>
   <body>
     <div class="container">
+      <div class="hamburger-container">
+        <!-- <div class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div> -->
+        <div class="hamburger-icon">
+          <img
+            id="hamburger-image"
+            src="/images/hamburger.png"
+            alt="hamburger image"
+          />
+          <!-- <div class="hamburger-text">CONTACT</div> -->
+        </div>
+      </div>
       <div class="header">
         <div class="title name">MAX BUNGAY</div>
         <div class="title role">Front End Developer</div>
         <div>
           <h6>HTML | CSS | JavaScript | React</h6>
         </div>
-        <div class="contact-2">
+        <!-- <div class="contact-2">
           <div class="icons">
             <div class="icon-container">
               <div class="icon">
@@ -53,35 +68,50 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 
     <div class="content">
       <div class="contact">
         <div class="icons">
-          <div class="github">
+          <div class="icon">
             <img
               id="github-image"
               src="/images/github.png"
               alt="github image"
             />
           </div>
-          <div class="linkedin">
+          <div class="icon">
             <img
               id="linkedin-image"
-              src="/images/linkedin.png"
+              src="/images/linkedin2.png"
               alt="linkedin image"
+            />
+          </div>
+          <div class="icon">
+            <img id="cv-image" src="/images/cv.png" alt="cv image" />
+          </div>
+          <div class="icon">
+            <img id="email-image" src="/images/email.png" alt="email image" />
+          </div>
+          <div class="icon">
+            <img
+              id="mobile-image"
+              src="/images/mobile.png"
+              alt="mobile image"
             />
           </div>
         </div>
       </div>
       <div id="heading">My Projects</div>
+
       <div class="projects-header">
         <h2>
           JavaScript Classics, Retro Games, Responsive Web Design and more...
         </h2>
       </div>
+
       <div class="row row-one">
         <div class="project">
           <h3 class="project-header" id="flappy-bird-header">Flappy Bird</h3>
@@ -203,8 +233,7 @@
           </div>
           <p>
             One of the projects I completed during Andrew Mead's JavaScript
-            course on Udemy.com. Currently not supported on touch screen
-            devices.
+            course on Udemy.com. Not supported on touch screen devices.
           </p>
           <div class="button-container">
             <button class="button" id="hangman-play-button">Play Game</button>
@@ -239,6 +268,42 @@
             </button>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="hamburger-panel">
+      <div class="nav">
+        <div class="links">
+          <ul>
+            <li>
+              <img id="nav-github" src="/images/github.png" alt="github icon" />
+              <span> My github </span>
+            </li>
+
+            <li>
+              <img
+                id="nav-linkedin"
+                src="/images/linkedin2.png"
+                alt="linkedin icon"
+              />
+              <span> My LinkedIn </span>
+            </li>
+            <li>
+              <img id="nav-cv" src="/images/cv.png" alt="cv icon" />
+              <span> View my CV (pdf) </span>
+            </li>
+            <li>
+              <img id="nav-email" src="/images/email.png" alt="email icon" />
+              <span> bungaymax@gmail.com </span>
+            </li>
+            <li>
+              <img id="nav-mobile" src="/images/mobile.png" alt="mobile icon" />
+              <span> +44 7580 021696 </span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cross">
+        <img id="nav-cross" src="/images/cross.png" alt="cross icon" />
       </div>
     </div>
     <script src="/scripts/app.js"></script>
