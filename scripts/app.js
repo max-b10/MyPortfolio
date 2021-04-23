@@ -20,6 +20,19 @@ const scoreKeeperCodeButton = document.querySelector(
 // Image Variables:
 const githubImage = document.querySelector("#github-image");
 
+// Hamburger:
+const hamburgerContainer = document.querySelector(".hamburger-container");
+const hamburgerPanel = document.querySelector(".hamburger-panel");
+const navCross = document.querySelector(".cross");
+
+navCross.addEventListener("click", () => {
+  hamburgerPanel.style.display = "none";
+  navCross.style.display = "none";
+});
+hamburgerContainer.addEventListener("click", () => {
+  hamburgerPanel.style.display = "block";
+  navCross.style.display = "block";
+});
 // Flappy Bird
 flappyBirdPlayButton.addEventListener("click", () => {
   window.open("https://flappy-bird-max-b10.netlify.app/");
