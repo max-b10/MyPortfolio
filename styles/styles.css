@@ -3,7 +3,8 @@
     padding: 0;
     margin: 0;
     /* font-family: 'Montserrat', sans-serif; */
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    /* font-family: 'Source Sans Pro', sans-serif; */
 }
 
 body{
@@ -11,27 +12,30 @@ body{
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.65;
-    /* background-image: url('/images//Square-Checker-Website-Background.jpg'); */
-    /* background-size: cover;
+    background-image: url('/images/backgrounds/marble.jpg');
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center; */
-    background-color:#2b252c;
+    /* background-position: top center; */
+    /* background-color:#2b252c; */
 }
+
 h2{
     font-size: 1.3rem;
-    margin: 2px 2px;
-    padding: 2px 2px;
+    margin: .5rem .5rem;
+    padding: .1rem .5rem;
 }
 @media(min-width:426px){
 h2{
     font-size: 2rem;
-    margin: 2px 2px;
-    padding: 2px 2px;
+    margin: .5rem .5rem;
+    padding: .1rem .5rem;
 }
 }
 h6{
-    font-weight: 400;
+    font-weight: 500;
 }
+
+
 p{
     font-weight: 300;
     font-size: .8rem;
@@ -44,15 +48,29 @@ p{
 @media(min-width:426px){
     p{
     font-weight: 300;
-    font-size: 1rem;
+    font-size: .8rem;
     margin: 0 auto;
     padding: 2px 2px;
     line-height: 1.9rem;
-    max-width: 95%;
+    max-width: 75%;
     text-align: justify;
 }
 }
+@media(min-width: 767px){
+    p{
+    text-align: justify;
+    display: block;
+    /* margin: 0 auto 2rem auto; */
+    width: 100%;
+    }
+}
+@media(min-width: 767px){
 
+.p-container{
+    width:80%;
+    margin: 1rem auto;
+}
+}
 
 .container{
     display: flex;
@@ -62,7 +80,6 @@ p{
     margin: 0 auto;
     min-height: 50vh;
     width: 90%;
-    color: rgb(232, 232, 232);
     vertical-align: baseline;
     padding: 1rem 1rem;
 }
@@ -73,62 +90,52 @@ p{
     align-items: center;
     position: absolute;
     cursor:pointer;
-    right: 0;
+    right: 4%;
     top: 2%;
     color: black;
     background-color: rgb(232, 232, 232);
     padding: .3rem;
-    width: 30px;
-    height: 30px;
+    border: solid #8a8a8a 2px;
 }
-/* .hamburger-container:active{
 
-} */
 @media(min-width:769px){
     .hamburger-container{
         display: none;
     }
 }
 
-/* .line{
-    width: 15px;
-    height: 1.3px;
-    background-color:black;
-    margin: 3px;
-} */
+.hamburger-text{
+    font-weight: bold;
+    font-size: .9rem;
+    margin-left: .2rem;
+}
+
 .hamburger-icon{
     /* width: 100%; */
     display: flex;
     justify-content: center;
 }
 #hamburger-image{
-    width: 25px;
+    width: 80%;
     padding: 0 .1rem;
 }
 
-/* .hamburger-text{
-    font-weight: bold;
-    font-size: .9rem;
-    margin-left: .2rem;
-} */
+
 
 /* Increase hamburger size on larger touch screens: */
-@media(min-width:426px){
+/* @media(min-width:426px){
     .hamburger-container{
     right: 3%;
     top: 3%;
-    /* transform: translate(-5%,-50%); */
+    transform: translate(-5%,-50%);
 }
 .line{
     width: 17px;
     height: 1.5px;
     background-color:black;
     margin: 4px;
-}
-.hamburger-text{
-    font-size: 1rem;
-}
-}
+}}
+
 
 /* Hamburger panel */
 .hamburger-panel{
@@ -141,9 +148,10 @@ p{
     width: 70%;
     background-color: rgb(232, 232, 232);
     color:black;
+    transition: width 200ms ease;
 }
 .nav{
-    margin: 1rem 1rem;
+    margin: 1rem 0rem;
     padding: 1rem 1rem;
 }
 li{
@@ -154,7 +162,6 @@ li{
     border-bottom: solid 1px #8a8a8a;
     font-weight:bold;
     padding: .4rem 0rem;
-    /* margin: 1rem 1rem; */
 }
 li span{
     margin-left: 15px;
@@ -162,64 +169,80 @@ li span{
 li img{
     width: 10%;
 }
+#nav-cv{
+    margin-left: .1rem;
+}
 #nav-cross{
     z-index: 2000;
     position: absolute;
     cursor:pointer;
     right: 6%;
     top: 2%;
-    /* width:10px; */
 }
 .cross img{
     width:7%;
 }
+
+/* Name and Role Header */
 .header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    min-height: 40vh;
     text-align: center;
-    padding: 4rem 2rem;
+    padding: 1rem 1rem;
+    color:black;
+    background-color: rgb(232, 232, 232);
+    border: solid #8a8a8a 2px;
+    
 }
 .name{
     font-size: 3.5rem;
+    font-weight: 500;
     margin: 2px 0px;
     letter-spacing: 2px;
-    /* border-top: solid white 1px; */
 }
 @media(max-width:374px){
 .name{
 font-size: 3rem;
 }
 }
+@media(min-width:769px){
+    .name{
+        font-size: 5.5rem;
+    }
+    
+}
 .role{
-    font-size: 1.5rem;
     font-weight: 400;  
     margin: 2px 0px 8px 0px;
-    border-bottom: solid white 1px;
-
+    border-bottom: solid #8a8a8a 1px;
 }
+
+
+
 /* Projects content block */
 .content{
     margin: 0 auto;
     background-color: rgb(232, 232, 232);
-    /* background-color: rgba(250, 235, 215, 0.664); */
     color: black;
     width: 90%;
     padding: 1rem 0rem;
     text-align: center;
+    border: solid #8a8a8a 2px;
 }
-
+@media(min-width:426px){
+.content{
+    /* width: 80%; */
+    max-width: 65%;
+}
+}
 @media(min-width:426px){
     .row{
         display: flex;
         flex-direction: row;
         justify-content: center;
         max-width: 100%;
-        padding: 1rem 1rem;
-        margin: 1rem 0rem;
-	    border-bottom: solid 1px #8a8a8a;
+       
     }
    
 }
@@ -261,33 +284,48 @@ font-size: 3rem;
 }
 
 .project{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 1rem 0rem .5rem 0rem;
     text-align: center;
+    border-bottom: solid #8a8a8a 1px;
+    margin: 0 2rem;
+}
+
+@media (min-width:426px){
+.project{
+    width:50%;
+    padding:1.5rem;
+    border-top: solid #8a8a8a 1px;
+    /* border-bottom: solid #8a8a8a 1px; */
+    border-left: solid #8a8a8a 1px;
+    margin:0;
+}
+.left{
+    border-left: none;
+}
+.projects-header{
+    border-bottom: none;
+}
+
+}
+@media (min-width:1440px){
+.project{
+padding: 2.5rem;
+}
 }
 .project-header{
     font-size: 1rem;
     padding: 0 0 1rem 0;
     text-decoration: underline;
-
 }
-
-@media(min-width:426px){
-    .project{
-    width: 42%;
-    }
-    .button-container{
-    padding: 1rem 0 1rem 0;
-    border-bottom: none;
-}
-.project-header{
-    font-size: 1.5rem;
-    padding: 0 0 1rem 0
-}
-}
-
 
 /* Project images*/
-
+.image-container{
+    width:70%;
+    margin: 0 auto;
+}
 #flappy-bird, #snake, #breakout, #calculator, #hangman, #todo-list, #score-keeper{
     padding: 1px;
     margin: 0 auto;
@@ -296,23 +334,17 @@ font-size: 3rem;
 }
 @media(min-width:426px){
  #flappy-bird, #snake, #breakout, #calculator, #hangman, #todo-list, #score-keeper{
-    max-width: 31vw;
+    width: 90%;
 }   
 }
 
 /* Buttons */
-.button-container{
-    margin: 0 auto;
-    padding: 0 0 1rem 0;
-    border-bottom: solid 1px #8a8a8a;
-    max-width: 100%;
-}
 .button{
     border: solid rgb(51, 51, 51) 1px;
     color: black;
     cursor: pointer;
-    font-size: 0.6rem;
-    font-weight: 900;
+    font-size: 0.7rem;
+    font-weight: 500;
     letter-spacing: 0.05rem;
     height: 2rem;
     line-height: 1rem;
@@ -321,6 +353,7 @@ font-size: 3rem;
     text-transform: uppercase;
     outline: none;
     min-width: 35%;
+    box-shadow: inset 0 0 1px 0 black;
 }
 .button::after{
     outline: none;
@@ -330,15 +363,36 @@ font-size: 3rem;
     font-weight: bold;
     outline: none;
 }
+.button-container{
+    margin:  1rem auto .5rem auto;
+    padding: 0 0 1rem 0;
+    /* border-bottom: solid 1px #8a8a8a; */
+}
+
+@media(min-width:426px){
+    .button-container{
+    width:80%;
+    margin: 0 auto;
+    border-bottom: none;
+}
+.project-header{
+    padding: 0 0 1rem 0
+}
+}
 
 /* Contact section icons */
 .contact{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    margin: 0 auto;
-    width: 80%;
+    align-items: center;
+    margin: 1rem auto;
+    padding: 1rem 1rem;
+    width: 35%;
+    background-color: rgb(232, 232, 232);
+    border: solid #8a8a8a 2px;
 }
+
 /* Hide Contact icons on touch screens: */
 @media(max-width:768px){
 .contact{
@@ -350,8 +404,16 @@ font-size: 3rem;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
+    /* width: 50%; */
 }
-
+/* .icons:hover{
+    height: 58.2px;
+} */
+.icon{
+    display: flex;
+    justify-content: center;
+    /* width: 10%; */
+}
 
 #github-image {
     max-width: 40%;
@@ -366,10 +428,11 @@ font-size: 3rem;
     cursor: pointer;
     background-color:#cacaca;
 }
-/* .contact-2{
-    display: flex;
-    justify-content: flex-start;
-    background-color: rgb(232, 232, 232);
-    width:40%;
-    border-radius: 50%;
-} */
+
+@media (min-width:426px){
+.row-four .project{
+    border:none;
+    border-bottom: solid #8a8a8a 1px;
+
+}
+}
