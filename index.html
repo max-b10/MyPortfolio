@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio: maxb-10</title>
     <link rel="stylesheet" href="/styles/styles.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
@@ -12,6 +12,10 @@
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -23,18 +27,22 @@
           <div class="line"></div>
           <div class="line"></div>
         </div> -->
-        <div class="hamburger-icon">
-          <img
+        <!-- <div class="hamburger-icon"> -->
+        <!-- <img
             id="hamburger-image"
             src="/images/hamburger.png"
             alt="hamburger image"
-          />
-          <!-- <div class="hamburger-text">CONTACT</div> -->
-        </div>
+          /> -->
+        <div class="hamburger-text">CONTACT</div>
+        <!-- </div> -->
       </div>
       <div class="header">
-        <div class="title name">MAX BUNGAY</div>
-        <div class="title role">Front End Developer</div>
+        <div class="title name">
+          <h2>MAX BUNGAY</h2>
+        </div>
+        <div class="title role">
+          <h3>Front End Developer</h3>
+        </div>
         <div>
           <h6>HTML | CSS | JavaScript | React</h6>
         </div>
@@ -70,9 +78,6 @@
           </div>
         </div> -->
       </div>
-    </div>
-
-    <div class="content">
       <div class="contact">
         <div class="icons">
           <div class="icon">
@@ -104,17 +109,20 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div class="content">
       <div id="heading">My Projects</div>
 
       <div class="projects-header">
-        <h2>
+        <h3>
           JavaScript Classics, Retro Games, Responsive Web Design and more...
-        </h2>
+        </h3>
       </div>
 
       <div class="row row-one">
-        <div class="project">
-          <h3 class="project-header" id="flappy-bird-header">Flappy Bird</h3>
+        <div class="project left">
+          <h4 class="project-header" id="flappy-bird-header">Flappy Bird</h4>
 
           <div class="image-container">
             <img
@@ -123,11 +131,13 @@
               alt="flappy bird Gif"
             />
           </div>
+          <div class="p-container">
+            <p>
+              A recreation of the infamously addictive mobile game: Flappy Bird
+              using HTML, CSS and vanilla JavaScript.
+            </p>
+          </div>
 
-          <p>
-            A recreation of the infamously addictive mobile game: Flappy Bird
-            using HTML, CSS and vanilla JavaScript.
-          </p>
           <div class="button-container">
             <button class="button" id="flappy-bird-play-button">
               Play Game
@@ -138,7 +148,7 @@
           </div>
         </div>
         <div class="project">
-          <h3 class="project-header" id="calculator-header">Calculator</h3>
+          <h4 class="project-header" id="calculator-header">Calculator</h4>
           <div class="image-container">
             <img
               id="calculator"
@@ -146,10 +156,12 @@
               alt="calculator Gif"
             />
           </div>
-          <p>
-            A JavaScript Calculator serves as a useful project to help learn
-            vanilla JavaScript fundamentals and CSS Grid.
-          </p>
+          <div class="p-container">
+            <p>
+              A JavaScript Calculator served as a useful project to help me
+              learn vanilla JavaScript fundamentals and CSS Grid.
+            </p>
+          </div>
           <div class="button-container">
             <button class="button" id="calculator-play-button">View App</button>
             <button class="button" id="calculator-code-button">
@@ -159,8 +171,8 @@
         </div>
       </div>
       <div class="row row-two">
-        <div class="project">
-          <h3 class="project-header" id="snake-header">Snake</h3>
+        <div class="project left">
+          <h4 class="project-header" id="snake-header">Snake</h4>
 
           <div class="image-container">
             <img
@@ -169,18 +181,20 @@
               alt="snake Gif"
             />
           </div>
-          <p>
-            A Nokia style Snake game using HTML, CSS and vanilla JavaScript,
-            with arrow-keys included for mobile users. Reaching a score of 20 is
-            impressive.
-          </p>
+          <div class="p-container">
+            <p>
+              A Nokia style Snake game using HTML, CSS and vanilla JavaScript,
+              with arrow-keys included for mobile users. Reaching a score of 20
+              is impressive.
+            </p>
+          </div>
           <div class="button-container">
             <button class="button" id="snake-play-button">Play Game</button>
             <button class="button" id="snake-code-button">View Code</button>
           </div>
         </div>
         <div class="project">
-          <h3 class="project-header" id="todo-list-header">Todo-List App</h3>
+          <h4 class="project-header" id="todo-list-header">Todo-List App</h4>
 
           <div class="image-container">
             <img
@@ -189,11 +203,14 @@
               alt="todo-list Gif"
             />
           </div>
-          <p>
-            The most clichéd of all JavaScript projects, I found this to be a
-            brilliant learning resource from Andrew Mead's JavaScript course on
-            Udemy.com .
-          </p>
+          <div class="p-container">
+            <p>
+              The most clichéd of all JavaScript projects, I found this to be a
+              brilliant learning resource from Andrew Mead's JavaScript course
+              on Udemy.com .
+            </p>
+          </div>
+
           <div class="button-container">
             <button class="button" id="todo-list-play-button">View App</button>
             <button class="button" id="todo-list-code-button">View Code</button>
@@ -201,8 +218,8 @@
         </div>
       </div>
       <div class="row row-three">
-        <div class="project">
-          <h3 class="project-header" id="breakout-header">Breakout</h3>
+        <div class="project left">
+          <h4 class="project-header" id="breakout-header">Breakout</h4>
 
           <div class="image-container">
             <img
@@ -211,10 +228,13 @@
               alt="breakout Gif"
             />
           </div>
-          <p>
-            A recreation of the classic game: Breakout using HTML, CSS and
-            vanilla JavaScript. Arrow-keys included for mobile users.
-          </p>
+          <div class="p-container">
+            <p>
+              A recreation of the classic game: Breakout using HTML, CSS and
+              vanilla JavaScript. Arrow-keys included for mobile users.
+            </p>
+          </div>
+
           <div class="button-container">
             <button class="button" id="breakout-play-button">Play Game</button>
             <button class="button" id="breakout-code-button">View Code</button>
@@ -222,7 +242,7 @@
         </div>
 
         <div class="project">
-          <h3 class="project-header" id="hangman-header">Hangman</h3>
+          <h4 class="project-header" id="hangman-header">Hangman</h4>
 
           <div class="image-container">
             <img
@@ -231,10 +251,13 @@
               alt="hangman Gif"
             />
           </div>
-          <p>
-            One of the projects I completed during Andrew Mead's JavaScript
-            course on Udemy.com. Not supported on touch screen devices.
-          </p>
+          <div class="p-container">
+            <p>
+              One of the projects I completed during Andrew Mead's JavaScript
+              course on Udemy.com. Not supported on touch screen devices...yet!
+            </p>
+          </div>
+
           <div class="button-container">
             <button class="button" id="hangman-play-button">Play Game</button>
             <button class="button" id="hangman-code-button">View Code</button>
@@ -243,9 +266,9 @@
       </div>
       <div class="row row-four">
         <div class="project">
-          <h3 class="project-header" id="score-keeper-header">
+          <h4 class="project-header" id="score-keeper-header">
             Score-Keeper App
-          </h3>
+          </h4>
 
           <div class="image-container">
             <img
@@ -254,11 +277,14 @@
               alt="score-keeper Gif"
             />
           </div>
-          <p>
-            Hopefully you have the strength to ignore the hideous colour scheme
-            of this Score-Keeper app I made. Inspired by a newly found interest
-            in Chess over Lockdown.
-          </p>
+          <div class="p-container">
+            <p>
+              Hopefully you have the strength to ignore the hideous colour
+              scheme of this Score-Keeper app I made. Inspired by a newly found
+              interest in Chess over Lockdown.
+            </p>
+          </div>
+
           <div class="button-container">
             <button class="button" id="score-keeper-play-button">
               View App
