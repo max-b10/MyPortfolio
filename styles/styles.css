@@ -24,6 +24,7 @@ h2{
     margin: .5rem .5rem;
     padding: .1rem .5rem;
 }
+
 @media(min-width:426px){
 h2{
     font-size: 2rem;
@@ -31,11 +32,13 @@ h2{
     padding: .1rem .5rem;
 }
 }
+
 h6{
     font-weight: 500;
 }
-
-
+li{
+    list-style: none;
+}
 p{
     font-weight: 300;
     font-size: .8rem;
@@ -45,6 +48,7 @@ p{
     max-width: 67%;
     text-align: justify;
 }
+
 @media(min-width:426px){
     p{
     font-weight: 300;
@@ -56,34 +60,22 @@ p{
     text-align: justify;
 }
 }
+
 @media(min-width: 767px){
     p{
     text-align: justify;
-    display: block;
-    /* margin: 0 auto 2rem auto; */
     width: 100%;
     }
 }
-@media(min-width: 767px){
 
+@media(min-width: 767px){
 .p-container{
     width:80%;
     margin: 1rem auto;
 }
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    min-height: 50vh;
-    width: 90%;
-    vertical-align: baseline;
-    padding: 1rem 1rem;
-}
-
+/* Mobile contact menu */
 .hamburger-container{
     display: flex;
     justify-content: space-evenly;
@@ -104,40 +96,7 @@ p{
     }
 }
 
-.hamburger-text{
-    font-weight: bold;
-    font-size: .9rem;
-    margin-left: .2rem;
-}
-
-.hamburger-icon{
-    /* width: 100%; */
-    display: flex;
-    justify-content: center;
-}
-#hamburger-image{
-    width: 80%;
-    padding: 0 .1rem;
-}
-
-
-
-/* Increase hamburger size on larger touch screens: */
-/* @media(min-width:426px){
-    .hamburger-container{
-    right: 3%;
-    top: 3%;
-    transform: translate(-5%,-50%);
-}
-.line{
-    width: 17px;
-    height: 1.5px;
-    background-color:black;
-    margin: 4px;
-}}
-
-
-/* Hamburger panel */
+/* Mobile Hamburger panel */
 .hamburger-panel{
     display: none;
     position:fixed;
@@ -154,7 +113,24 @@ p{
     margin: 1rem 0rem;
     padding: 1rem 1rem;
 }
-li{
+
+.hamburger-text{
+    font-weight: bold;
+    font-size: .9rem;
+    margin-left: .2rem;
+}
+
+.hamburger-icon{
+    /* width: 100%; */
+    display: flex;
+    justify-content: center;
+}
+#hamburger-image{
+    width: 80%;
+    padding: 0 .1rem;
+}
+
+.links ul li{
     display: flex;
     justify-content:flex-start;
     align-items: center;
@@ -163,10 +139,10 @@ li{
     font-weight:bold;
     padding: .4rem 0rem;
 }
-li span{
+.links ul li span{
     margin-left: 15px;
 }
-li img{
+.links ul li img{
     width: 10%;
 }
 #nav-cv{
@@ -183,6 +159,93 @@ li img{
     width:7%;
 }
 
+/* Desktop Nav Bar */
+.desktop-contact-nav{
+display: none;
+}
+/* .icon-text{
+    display: none;
+} */
+
+/* Desktop Contact Nav */
+@media(min-width: 769px){
+.desktop-contact-nav{
+    position: fixed;
+    top:5%;
+    width: 10%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1rem 1rem;
+    color:black;
+    background-color: rgb(232, 232, 232);
+    border-top: solid #8a8a8a 2px;
+    border-bottom: solid #8a8a8a 2px;
+    border-right: solid #8a8a8a 2px;
+    transition: width 600ms ease;
+}
+.icons{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+}
+.icon{
+    margin: .7rem 0;
+}
+.icon-link{
+    display: flex;
+    justify-content: flex-start;
+
+} 
+
+.icon-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .65rem;
+    font-weight: bold;
+    margin-left: .5rem;
+}
+/* .desktop-contact-nav:hover{
+    width: 8%;
+}
+.desktop-contact-nav:hover .icon{
+    width: 50%;
+}
+.desktop-contact-nav:hover .icon-text{
+    display: block;
+} */
+}
+
+#github-image, #cv-image, #email-image, #mobile-image, #linkedin-image{
+    width: 25%;
+}
+
+#github-image:hover, #linkedin-image:hover, #cv-image:hover, #email-image:hover, #mobile-image:hover{
+    cursor: pointer;
+    /* background-color:#cacaca; */
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 50vh;
+    width: 90%;
+    vertical-align: baseline;
+    padding: 1rem 1rem;
+}
+
+
+
+
+
 /* Name and Role Header */
 .header{
     display: flex;
@@ -193,7 +256,6 @@ li img{
     color:black;
     background-color: rgb(232, 232, 232);
     border: solid #8a8a8a 2px;
-    
 }
 .name{
     font-size: 3.5rem;
@@ -218,8 +280,6 @@ font-size: 3rem;
     border-bottom: solid #8a8a8a 1px;
 }
 
-
-
 /* Projects content block */
 .content{
     margin: 0 auto;
@@ -242,7 +302,6 @@ font-size: 3rem;
         flex-direction: row;
         justify-content: center;
         max-width: 100%;
-       
     }
    
 }
@@ -312,7 +371,7 @@ font-size: 3rem;
 }
 @media (min-width:1440px){
 .project{
-padding: 2.5rem;
+    padding: 2.5rem;
 }
 }
 .project-header{
@@ -326,14 +385,14 @@ padding: 2.5rem;
     width:70%;
     margin: 0 auto;
 }
-#flappy-bird, #snake, #breakout, #calculator, #hangman, #todo-list, #score-keeper{
+#flappy-bird, #snake, #breakout, #calculator, #hangman, #todo-list, #score-keeper, #profile-card{
     padding: 1px;
     margin: 0 auto;
     border: solid 1px  #8a8a8a;
     max-width: 49vw;
 }
 @media(min-width:426px){
- #flappy-bird, #snake, #breakout, #calculator, #hangman, #todo-list, #score-keeper{
+ #flappy-bird, #snake, #breakout, #calculator, #hangman, #todo-list, #score-keeper, #profile-card{
     width: 90%;
 }   
 }
@@ -375,64 +434,18 @@ padding: 2.5rem;
     margin: 0 auto;
     border-bottom: none;
 }
+.button{
+    font-size: 0.5rem;
+    padding: 0.5rem
+}
 .project-header{
     padding: 0 0 1rem 0
 }
 }
 
-/* Contact section icons */
-.contact{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    margin: 1rem auto;
-    padding: 1rem 1rem;
-    width: 35%;
-    background-color: rgb(232, 232, 232);
-    border: solid #8a8a8a 2px;
-}
 
-/* Hide Contact icons on touch screens: */
-@media(max-width:768px){
-.contact{
-    display: none;
-}
 
-}
-.icons{
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    /* width: 50%; */
-}
-/* .icons:hover{
-    height: 58.2px;
-} */
-.icon{
-    display: flex;
-    justify-content: center;
-    /* width: 10%; */
-}
 
-#github-image {
-    max-width: 40%;
-    object-fit: cover;
-    border-radius: 50%;
-}
-#cv-image, #email-image, #mobile-image, #linkedin-image{
-    max-width: 40%;
-    object-fit: cover;
-}
-#github-image:hover, #linkedin-image:hover, #cv-image:hover{
-    cursor: pointer;
-    background-color:#cacaca;
-}
 
-@media (min-width:426px){
-.row-four .project{
-    border:none;
-    border-bottom: solid #8a8a8a 1px;
 
-}
-}
+
