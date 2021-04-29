@@ -20,6 +20,67 @@
     />
   </head>
   <body>
+    <div class="desktop-contact-nav">
+      <ul class="icons">
+        <li class="icon">
+          <a href="https://github.com/max-b10" class="icon-link">
+            <img
+              class="contact-image"
+              id="github-image"
+              src="/images/github.png"
+              alt="github image"
+            />
+            <span class="icon-text">My github</span>
+          </a>
+        </li>
+        <li class="icon">
+          <a href="https://github.com/max-b10" class="icon-link">
+            <img
+              class="contact-image"
+              id="linkedin-image"
+              src="/images/linkedin2.png"
+              alt="linkedin image"
+            />
+            <span class="icon-text">My LinkedIn</span>
+          </a>
+        </li>
+        <li class="icon">
+          <a href="https://github.com/max-b10" class="icon-link">
+            <img
+              class="contact-image"
+              id="cv-image"
+              src="/images/cv2.png"
+              alt="cv image"
+            />
+            <span class="icon-text">View CV (pdf)</span>
+          </a>
+        </li>
+
+        <li class="icon">
+          <a href="#" class="icon-link" id="mobile-link">
+            <img
+              class="contact-image"
+              id="mobile-image"
+              src="/images/mobile.png"
+              alt="mobile image"
+            />
+            <span class="icon-text">+44 7580 021696</span>
+          </a>
+        </li>
+
+        <li class="icon">
+          <a href="#" class="icon-link" id="email-link">
+            <img
+              class="contact-image"
+              id="email-image"
+              src="/images/email.png"
+              alt="email image"
+            />
+            <span class="icon-text">bungaymax@gmail.com</span>
+          </a>
+        </li>
+      </ul>
+    </div>
     <div class="container">
       <div class="hamburger-container">
         <!-- <div class="hamburger">
@@ -46,39 +107,8 @@
         <div>
           <h6>HTML | CSS | JavaScript | React</h6>
         </div>
-        <!-- <div class="contact-2">
-          <div class="icons">
-            <div class="icon-container">
-              <div class="icon">
-                <img
-                  id="github-image"
-                  src="/images/github.png"
-                  alt="github image"
-                />
-              </div>
-            </div>
-            <div class="icon-container">
-              <div class="icon">
-                <img
-                  id="linkedin-image"
-                  src="/images/linkedin.png"
-                  alt="linkedin image"
-                />
-              </div>
-            </div>
-            <div class="icon-container">
-              <div class="icon">
-                <img
-                  id="email-image"
-                  src="/images/email.png"
-                  alt="email image"
-                />
-              </div>
-            </div>
-          </div>
-        </div> -->
       </div>
-      <div class="contact">
+      <!-- <div class="contact">
         <div class="icons">
           <div class="icon">
             <img
@@ -108,9 +138,15 @@
             />
           </div>
         </div>
-      </div>
+        <div class="drawer">
+          <div class="drawer-item"><p>My github</p></div>
+          <div class="drawer-item"><p>My LinkedIn</p></div>
+          <div class="drawer-item"><p>View CV (pdf)</p></div>
+          <div class="drawer-item"><p>bungaymax@gmail.com</p></div>
+          <div class="drawer-item"><p>+44 7580 021696</p></div>
+        </div>
+      </div> -->
     </div>
-
     <div class="content">
       <div id="heading">My Projects</div>
 
@@ -207,7 +243,10 @@
             <p>
               The most clichéd of all JavaScript projects, I found this to be a
               brilliant learning resource from Andrew Mead's JavaScript course
-              on Udemy.com .
+              on
+              <a href="https://www.udemy.com/course/modern-javascript/"
+                >Udemy.com</a
+              >.
             </p>
           </div>
 
@@ -253,8 +292,10 @@
           </div>
           <div class="p-container">
             <p>
-              One of the projects I completed during Andrew Mead's JavaScript
-              course on Udemy.com. Not supported on touch screen devices...yet!
+              A project I completed during Andrew Mead's JavaScript course on
+              <a href="https://www.udemy.com/course/modern-javascript/"
+                >Udemy.com</a
+              >. Not supported on touch screen devices...yet!
             </p>
           </div>
 
@@ -265,7 +306,7 @@
         </div>
       </div>
       <div class="row row-four">
-        <div class="project">
+        <div class="project left">
           <h4 class="project-header" id="score-keeper-header">
             Score-Keeper App
           </h4>
@@ -290,6 +331,36 @@
               View App
             </button>
             <button class="button" id="score-keeper-code-button">
+              View Code
+            </button>
+          </div>
+        </div>
+        <div class="project">
+          <h4 class="project-header" id="profile-card-header">
+            Profile Card Challenge
+          </h4>
+
+          <div class="image-container">
+            <img
+              id="profile-card"
+              src="/images/Project Covers/profile-card.PNG"
+              alt="profile-card Gif"
+            />
+          </div>
+          <div class="p-container">
+            <p>
+              One of my first independent coding attempts. A challenge provided
+              by
+              <a href="https://www.frontendmentor.io">frontendmentor.com</a>. I
+              had to replicate a profile card design as closely as possible.
+            </p>
+          </div>
+
+          <div class="button-container">
+            <button class="button" id="profile-card-play-button">
+              View Page
+            </button>
+            <button class="button" id="profile-card-code-button">
               View Code
             </button>
           </div>
