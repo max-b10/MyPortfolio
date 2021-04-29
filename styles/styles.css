@@ -16,7 +16,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     /* background-position: top center; */
-    /* background-color:#2b252c; */
 }
 
 h2{
@@ -163,17 +162,21 @@ p{
 .desktop-contact-nav{
 display: none;
 }
-/* .icon-text{
-    display: none;
-} */
+
 
 /* Desktop Contact Nav */
 @media(min-width: 769px){
+    .icon-text{
+    display: none;
+}
+#github-image, #cv-image, #email-image, #mobile-image, #linkedin-image{
+    width: 100%;
+}
 .desktop-contact-nav{
     position: fixed;
-    top:5%;
-    width: 10%;
-    height: 40vh;
+    top:0%;
+    width: 2.5rem;
+    /* height: 40vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -181,7 +184,7 @@ display: none;
     padding: 1rem 1rem;
     color:black;
     background-color: rgb(232, 232, 232);
-    border-top: solid #8a8a8a 2px;
+    /* border-top: solid #8a8a8a 2px; */
     border-bottom: solid #8a8a8a 2px;
     border-right: solid #8a8a8a 2px;
     transition: width 600ms ease;
@@ -191,41 +194,46 @@ display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    max-width: 100%;
+    width: 100%;
 }
 .icon{
     margin: .7rem 0;
+    width:100%;
+}
+.icon a{
+    text-decoration: none;
+    color: black;
 }
 .icon-link{
     display: flex;
     justify-content: flex-start;
+    width: 2rem;
 
 } 
 
-.icon-text{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.desktop-contact-nav:hover{
+    width: 7rem;
+}
+/* .desktop-contact-nav:hover .icons{
+    width: 100%;
+} */
+.desktop-contact-nav:hover .icon{
+    justify-content: space-evenly;
+    width: 100%;
+}
+.desktop-contact-nav:hover .icon-link{
+    width: 100%;
+}
+.desktop-contact-nav:hover .icon-text{
+   display: inline;
     font-size: .65rem;
     font-weight: bold;
     margin-left: .5rem;
+    width: 5rem;
 }
-/* .desktop-contact-nav:hover{
-    width: 8%;
-}
-.desktop-contact-nav:hover .icon{
-    width: 50%;
-}
-.desktop-contact-nav:hover .icon-text{
-    display: block;
-} */
 }
 
-#github-image, #cv-image, #email-image, #mobile-image, #linkedin-image{
-    width: 25%;
-}
-
-#github-image:hover, #linkedin-image:hover, #cv-image:hover, #email-image:hover, #mobile-image:hover{
+.contact-image:hover{
     cursor: pointer;
     /* background-color:#cacaca; */
 }
@@ -241,10 +249,6 @@ display: none;
     vertical-align: baseline;
     padding: 1rem 1rem;
 }
-
-
-
-
 
 /* Name and Role Header */
 .header{
