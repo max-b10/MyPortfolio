@@ -157,6 +157,15 @@ p{
 .cross img{
     width:7%;
 }
+.nav-link-github:hover{
+    cursor: pointer;
+}
+.nav-link-linkedin:hover{
+    cursor: pointer;
+}
+.nav-link-cv:hover{
+    cursor: pointer;
+}
 
 /* Desktop Nav Bar */
 .desktop-contact-nav{
