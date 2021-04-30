@@ -167,27 +167,27 @@ display: none;
 /* Desktop Contact Nav */
 @media(min-width: 769px){
     .icon-text{
+    width: 5rem;
     display: none;
 }
 #github-image, #cv-image, #email-image, #mobile-image, #linkedin-image{
-    width: 100%;
+    width: 2rem;
 }
 .desktop-contact-nav{
     position: fixed;
-    top:0%;
+    top: 1%;
     width: 2.5rem;
     /* height: 40vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 1rem 1rem;
+    padding: .1rem .7rem;
     color:black;
     background-color: rgb(232, 232, 232);
-    /* border-top: solid #8a8a8a 2px; */
+    border-top: solid #8a8a8a 2px;
     border-bottom: solid #8a8a8a 2px;
     border-right: solid #8a8a8a 2px;
-    transition: width 600ms ease;
 }
 .icons{
     display:flex;
@@ -207,30 +207,25 @@ display: none;
 .icon-link{
     display: flex;
     justify-content: flex-start;
-    width: 2rem;
-
 } 
 
 .desktop-contact-nav:hover{
-    width: 7rem;
+    width: 9.5rem;
 }
-/* .desktop-contact-nav:hover .icons{
-    width: 100%;
-} */
-.desktop-contact-nav:hover .icon{
-    justify-content: space-evenly;
-    width: 100%;
-}
-.desktop-contact-nav:hover .icon-link{
-    width: 100%;
-}
+
 .desktop-contact-nav:hover .icon-text{
-   display: inline;
+    display: flex;
+    align-items: center;
     font-size: .65rem;
     font-weight: bold;
-    margin-left: .5rem;
+    margin-left: .7rem;
     width: 5rem;
+    transform: 1ms ease;
 }
+}
+.hover:hover{
+    color: rgb(6, 170, 192);
+
 }
 
 .contact-image:hover{
@@ -262,28 +257,18 @@ display: none;
     border: solid #8a8a8a 2px;
 }
 .name{
-    font-size: 3.5rem;
-    font-weight: 500;
     margin: 2px 0px;
     letter-spacing: 2px;
 }
-@media(max-width:374px){
-.name{
-font-size: 3rem;
-}
-}
-@media(min-width:769px){
-    .name{
-        font-size: 5.5rem;
-    }
-    
-}
+
+
 .role{
-    font-weight: 400;  
     margin: 2px 0px 8px 0px;
     border-bottom: solid #8a8a8a 1px;
 }
-
+#mobile-link, #email-link{
+    cursor:default;
+}
 /* Projects content block */
 .content{
     margin: 0 auto;
@@ -296,7 +281,6 @@ font-size: 3rem;
 }
 @media(min-width:426px){
 .content{
-    /* width: 80%; */
     max-width: 65%;
 }
 }
