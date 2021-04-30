@@ -18,7 +18,11 @@ const scoreKeeperCodeButton = document.querySelector(
   "#score-keeper-code-button"
 );
 // Image Variables:
-const githubImage = document.querySelector("#github-image");
+// const githubImage = document.querySelector("#github-image");
+// const linkedInImage = document.querySelector("#linkedin-image");
+
+const navLinkGitHub = document.querySelector(".nav-link-github");
+const navLinkLinkedIn = document.querySelector(".nav-link-linkedin");
 
 // Hamburger:
 const hamburgerContainer = document.querySelector(".hamburger-container");
@@ -33,6 +37,7 @@ hamburgerContainer.addEventListener("click", () => {
   hamburgerPanel.style.display = "block";
   navCross.style.display = "block";
 });
+
 // Flappy Bird
 flappyBirdPlayButton.addEventListener("click", () => {
   window.open("https://flappy-bird-max-b10.netlify.app/");
@@ -89,6 +94,19 @@ scoreKeeperCodeButton.addEventListener("click", () => {
   window.open("https://github.com/max-b10/chess-series-score-keeper");
 });
 
-githubImage.addEventListener("click", () => {
+// githubImage.addEventListener("click", () => {
+//   window.open("https://github.com/max-b10");
+// });
+
+// linkedInImage.addEventListener("click", () => {
+//   window.open("https://www.linkedin.com/in/max-bungay/");
+// });
+navLinkGitHub.addEventListener("click", () => {
   window.open("https://github.com/max-b10");
 });
+navLinkLinkedIn.addEventListener("click", () => {
+  window.open("https://linkedin.com/in/max-bungay");
+});
+// navLinkCV.addEventListener("click", () => {
+//   window.open("/CV Max Bungay 2020.pdf");
+// });
