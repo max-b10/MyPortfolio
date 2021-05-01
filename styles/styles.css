@@ -30,7 +30,17 @@ h2{
     margin: .5rem .5rem;
     padding: .1rem .5rem;
 }
+
 }
+@media(min-width:1440px){
+    h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.7rem;
+}
+}
+
 
 h6{
     font-weight: 500;
@@ -439,6 +449,13 @@ display: none;
     padding: 0 0 1rem 0
 }
 }
+@media(min-width:1024px){
+.button{
+    font-size: 0.7rem;
+    padding: 0.5rem
+}
+}
+
 
 
 
