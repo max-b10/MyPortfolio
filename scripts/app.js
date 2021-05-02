@@ -17,6 +17,13 @@ const scoreKeeperPlayButton = document.querySelector(
 const scoreKeeperCodeButton = document.querySelector(
   "#score-keeper-code-button"
 );
+const profileCardPlayButton = document.querySelector(
+  "#profile-card-play-button"
+);
+const profileCardCodeButton = document.querySelector(
+  "#profile-card-code-button"
+);
+
 // Image Variables:
 // const githubImage = document.querySelector("#github-image");
 // const linkedInImage = document.querySelector("#linkedin-image");
@@ -92,6 +99,13 @@ scoreKeeperPlayButton.addEventListener("click", () => {
 });
 scoreKeeperCodeButton.addEventListener("click", () => {
   window.open("https://github.com/max-b10/chess-series-score-keeper");
+});
+// Profile Card
+profileCardPlayButton.addEventListener("click", () => {
+  window.open("https://profile-card-max-b10.netlify.app/");
+});
+profileCardCodeButton.addEventListener("click", () => {
+  window.open("https://github.com/max-b10/Frontend-Mentor-Profile-Card");
 });
 
 // githubImage.addEventListener("click", () => {
