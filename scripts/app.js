@@ -23,6 +23,8 @@ const profileCardPlayButton = document.querySelector(
 const profileCardCodeButton = document.querySelector(
   "#profile-card-code-button"
 );
+const ttsPlayButton = document.querySelector("#tts-play-button");
+const ttsCodeButton = document.querySelector("#tts-code-button");
 
 // Image Variables:
 // const githubImage = document.querySelector("#github-image");
@@ -100,13 +102,24 @@ scoreKeeperPlayButton.addEventListener("click", () => {
 scoreKeeperCodeButton.addEventListener("click", () => {
   window.open("https://github.com/max-b10/chess-series-score-keeper");
 });
-// Profile Card
-profileCardPlayButton.addEventListener("click", () => {
-  window.open("https://profile-card-max-b10.netlify.app/");
+
+// // Profile Card
+// profileCardPlayButton.addEventListener("click", () => {
+//   window.open("https://profile-card-max-b10.netlify.app/");
+// });
+// profileCardCodeButton.addEventListener("click", () => {
+//   window.open("https://github.com/max-b10/Frontend-Mentor-Profile-Card");
+// });
+
+// Text to Speech
+ttsPlayButton.addEventListener("click", () => {
+  window.open("https://tts-max-b10.netlify.app/");
 });
-profileCardCodeButton.addEventListener("click", () => {
-  window.open("https://github.com/max-b10/Frontend-Mentor-Profile-Card");
+ttsCodeButton.addEventListener("click", () => {
+  window.open("https://github.com/max-b10/Text-To-Speech");
 });
+
+// Nav:
 
 // githubImage.addEventListener("click", () => {
 //   window.open("https://github.com/max-b10");
