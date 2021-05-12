@@ -392,14 +392,14 @@ display: none;
     width:70%;
     margin: 0 auto;
 }
-#flappy-bird, #snake, #breakout, #calculator, #hangman, #todo-list, #score-keeper, #profile-card, #text-to-speech{
+#flappy-bird, #snake, #breakout, #calculator, #hangman, #todo-list, #score-keeper, #profile-card, #text-to-speech, #ctcm{
     padding: 1px;
     margin: 0 auto;
     border: solid 1px  #8a8a8a;
     max-width: 49vw;
 }
 @media(min-width:426px){
- #flappy-bird, #snake, #breakout, #calculator, #hangman, #todo-list, #score-keeper, #profile-card, #text-to-speech{
+ #flappy-bird, #snake, #breakout, #calculator, #hangman, #todo-list, #score-keeper, #profile-card, #text-to-speech, #ctcm{
     width: 90%;
 }   
 }
