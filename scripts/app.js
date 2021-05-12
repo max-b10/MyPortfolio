@@ -17,6 +17,8 @@ const scoreKeeperPlayButton = document.querySelector(
 const scoreKeeperCodeButton = document.querySelector(
   "#score-keeper-code-button"
 );
+const ctcmPlayButton = document.querySelector("#ctcm-play-button");
+const ctcmCodeButton = document.querySelector("#ctcm-code-button");
 const profileCardPlayButton = document.querySelector(
   "#profile-card-play-button"
 );
@@ -95,12 +97,20 @@ todoListCodeButton.addEventListener("click", () => {
   window.open("https://github.com/max-b10/todo-app");
 });
 
-// Score-Keeper
-scoreKeeperPlayButton.addEventListener("click", () => {
-  window.open("https://chess-score-keeper-maxb-10.netlify.app/");
+// // Score-Keeper
+// scoreKeeperPlayButton.addEventListener("click", () => {
+//   window.open("https://chess-score-keeper-maxb-10.netlify.app/");
+// });
+// scoreKeeperCodeButton.addEventListener("click", () => {
+//   window.open("https://github.com/max-b10/chess-series-score-keeper");
+// });
+
+// Compare the Crypto Market
+ctcmPlayButton.addEventListener("click", () => {
+  window.open("https://ctcm-max-b10.netlify.app");
 });
-scoreKeeperCodeButton.addEventListener("click", () => {
-  window.open("https://github.com/max-b10/chess-series-score-keeper");
+ctcmCodeButton.addEventListener("click", () => {
+  window.open("https://github.com/max-b10/Crypto-Compare-App");
 });
 
 // // Profile Card
